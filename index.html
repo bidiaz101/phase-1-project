@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang ="en">
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <script type = "text/javascript" src="src/index.js"></script>
+        <title>Pok&eacute;mon Team Builder</title>
+    </head>
+    <body>
+        <img id="title-img" src="https://fontmeme.com/permalink/210829/8d91cae47ad62cc39946a037b32f8622.png" alt="pokemon-font" border="0">
+        <div id="sprite-container"></div>
+        <div id="btn-container">
+            <button id="back">&#8592;</button>
+            <button id="forward">&#8594;</button>
+            <br>
+            <br>
+            <form>
+                <label for="'mon-name"><span>Search by Pok&eacute;mon Name:</span></label>
+                <input name="'mon-name" id="'mon-name" type="text" placeholder="Search by Pok&eacute;mon Name">
+                <br>
+                <label for="dex number"><span>Search by Pok&eacute;dex Number: </span></label>
+                <input type = "number"name="dex-number" id="dex-number" placeholder="Search by Pok&eacute;dex Number">
+                <input type="submit" value="Search!"></submit>
+            </form>
+        </div>
+        <div id="center-column">
+            <div id="card-container">
+                <h2 id="welcome-msg">Hey you! Yeah you! You wanna be a pok&eacute;mon master dontcha? Well you're gonna need a team first! That's where I can help! I'm Professor Brian, I created this website, and I encourage you peruse the list of Pok&eacute;mon. I'm sure you can build a team to rival any other! Best of luck, trainer!</h2>
+            </div>
+        </div>
+        <div id="team-container">
+            <h1>My Team</h1>
+            <div id="member1"></div>
+            <div id="member2"></div>
+            <div id="member3"></div>
+            <div id="member4"></div>
+            <div id="member5"></div>
+            <div id="member6"></div>
+        </div>
+        <div id="modal2" hidden>
+            <h1 class="error-msg">Error!</h1>
+            <h2 class="error-msg">You have reached your team limit of six pok&eacute;mon! Set one free to add another instead.</h2>
+        </div>
+        <div id="modal" hidden>
+            <h1 class="error-msg">Error!</h1>
+            <h2 class="error-msg">There isn't a pok&eacute;mon with that name or pok&eacute;dex number!</h2>
+        </div>
+        <footer>
+            <p>
+            <strong>Disclaimer:</strong>
+
+            Pok&eacute;mon Team Builder Plus is a fan made website and claims no ownership of any intellectual property associated with Nintendo or Game Freak. All assets found on the site are trademarks of Nintendo and are only used for non-commercial and educational purpose.
+            </p>
+        </footer>
+    </body>
+</html>
