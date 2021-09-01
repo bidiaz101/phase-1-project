@@ -107,6 +107,7 @@ function renderCard(data){
     teamBtn.innerText = "Add to My Team!"
     teamBtn.addEventListener("click", () => {
         addTeamMember(data)
+        window.scrollTo(0,0)
     })
 
     newCard.appendChild(newText)
@@ -138,26 +139,38 @@ function addTeamMember(pokeData){
         case mem1.innerHTML:
             mem1.appendChild(memberSprite)
             mem1.appendChild(removeBtn)
+            memberSprite.style.backgroundColor="rgba(3, 190, 252,0.5)"
+            setTimeout(() => memberSprite.style.backgroundColor="", 1000)
             break
         case mem2.innerHTML:
             mem2.appendChild(memberSprite)
             mem2.appendChild(removeBtn)
+            memberSprite.style.backgroundColor="rgba(3, 190, 252,0.5)"
+            setTimeout(() => memberSprite.style.backgroundColor="", 1000)
             break
         case mem3.innerHTML:
             mem3.appendChild(memberSprite)
             mem3.appendChild(removeBtn)
+            memberSprite.style.backgroundColor="rgba(3, 190, 252,0.5)"
+            setTimeout(() => memberSprite.style.backgroundColor="", 1000)
             break
         case mem4.innerHTML:
             mem4.appendChild(memberSprite)
             mem4.appendChild(removeBtn)
+            memberSprite.style.backgroundColor="rgba(3, 190, 252,0.5)"
+            setTimeout(() => memberSprite.style.backgroundColor="", 1000)
             break
         case mem5.innerHTML:
             mem5.appendChild(memberSprite)
             mem5.appendChild(removeBtn)
+            memberSprite.style.backgroundColor="rgba(3, 190, 252,0.5)"
+            setTimeout(() => memberSprite.style.backgroundColor="", 1000)
             break
         case mem6.innerHTML:
             mem6.appendChild(memberSprite)
             mem6.appendChild(removeBtn)
+            memberSprite.style.backgroundColor="rgba(3, 190, 252,0.5)"
+            setTimeout(() => memberSprite.style.backgroundColor="", 1000)
             break
         default:
         showTeamError()
