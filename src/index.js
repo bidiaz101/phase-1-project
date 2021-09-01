@@ -90,11 +90,13 @@ function renderCard(data){
 
     const flavorText = document.createElement("p")
 
-    const text = getFlavorText(data.species.url).then( (json) =>{
-        arrIndex = Math.floor(Math.random()*11)
-        const respText = json.flavor_text_entries[arrIndex].flavor_text
+    const text = getFlavorText(data.species.url).then((json) =>{
+        arrIndex = Math.floor(Math.random()*5)
+        const englishEntries = json.flavor_text_entries.filter(entryObj => {
+            return entryObj.language.name === "en"
+        })
+        const respText = englishEntries[arrIndex].flavor_text
         flavorText.innerText = respText
-        console.log(flavorText)
         newCard.appendChild(flavorText)
     })
 
