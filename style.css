@@ -40,7 +40,7 @@
 #sprite-container{
     float: left;
     width: 30%;
-    margin-top: 120px;
+    margin-top: 150px;
 }
 #welcome-msg{
     padding: 30px;
@@ -90,15 +90,18 @@
     border: 2px;
     border-style: solid;
     border-color: #F6FF33;
+    font-size: large;
+    font-weight: bolder;
 }
 #pokemon-card button{
     position: relative;
     right: 110px;
-    top: 200px;
+    top: 210px;
 }
 #btn-container button{
     position:relative;
     left:20px;
+    font-size: larger;
 }
 body{
     background-image: url("https://images.unsplash.com/photo-1534582929036-cc7f1bb2043e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1868&q=80");
@@ -112,6 +115,7 @@ span{
     padding:10px;
     color: #F6FF33;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: larger;
     text-decoration: underline;
     text-decoration-color: #F6FF33;
 }
