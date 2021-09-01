@@ -94,7 +94,7 @@ function renderCard(data){
         arrIndex = Math.floor(Math.random()*11)
         const respText = json.flavor_text_entries[arrIndex].flavor_text
         flavorText.innerText = respText
-        //console.log(flavorText)
+        console.log(flavorText)
         newCard.appendChild(flavorText)
     })
 
