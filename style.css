@@ -1,15 +1,18 @@
 #card-container{
     text-align: center;
-    margin-top: 60px;
+    
     width:70%;
     height: 100%;
+
+    margin-top: 60px;
     margin-left: auto;
     margin-right: auto;
 }
 #team-container{
     color:yellow;
+
     font-family:'Courier New', Courier, monospace;
-    position:relative;
+
     position: absolute;
     left: 1150px;
     bottom: 200px;
@@ -18,23 +21,28 @@
     float:left;
 }
 #team-container h1{
-    background-color: rgba(52,51,255,0.7);
+    background-color: rgba(97, 97, 252, 0.7);
+
     padding: 10px;
     border: 5px;
     border-style: solid;
     border-color: #F6FF33;
     text-align: center;
+
     position:relative;
     right:30px;
 }
 #team-container button{
     font-family: 'Courier New', Courier, monospace;
+
     position: relative;
     right: 50%;
+
     background-color: rgb(97, 97, 252);
     color:#F6FF33;
-    border-color:#F6FF33;
+
     border:2px;
+    border-color:#F6FF33;
     border-style: solid;
 }
 #sprite-container{
@@ -45,12 +53,15 @@
 #welcome-msg{
     padding: 30px;
     width: 33%;
-    background-color: rgba(52,51,255,0.7);
+    background-color: rgba(97, 97, 252, 0.7);
+
     margin-left: auto;
     margin-right: auto;
     margin-top: 120px;
+
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 800;
+
     color: #F6FF33;
     border: 5px;
     border-style: solid;
@@ -59,9 +70,11 @@
 #pokemon-card h2{
     font-family: 'Courier New', Courier, monospace;
     font-size: 50px;
+
     background-color: rgba(116, 223, 252, 0.8);
     width: fit-content;
     padding: 15px;
+
     margin-left: auto;
     margin-right: auto;
     position:relative;
@@ -75,23 +88,31 @@
 }
 #pokemon-card h3{
     font-family: 'Courier New', Courier, monospace;
+
     width: fit-content;
     padding: 5px;
+
     margin-left: auto;
     margin-right: auto;
 }
 #pokemon-card p{
     font-family: 'Courier New', Courier, monospace;
+    font-size: large;
+    font-weight: bolder;
+
     background-color: rgba(116, 223, 252, 0.8);
+    padding: 10px;
+
     margin-left: auto;
     margin-right: auto;
     width:fit-content;
-    padding: 10px;
+
     border: 2px;
     border-style: solid;
     border-color: #F6FF33;
-    font-size: large;
-    font-weight: bolder;
+
+    position: relative;
+    bottom: 30px;
 }
 #pokemon-card button{
     position: relative;
@@ -114,8 +135,10 @@ body{
 span{
     padding:10px;
     color: #F6FF33;
+
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: larger;
+    
     text-decoration: underline;
     text-decoration-color: #F6FF33;
 }
@@ -123,37 +146,21 @@ span{
     position:absolute;
     top:80px;
 }
-.error-msg{
+#modal, #modal2{
+    border-radius: 10px;
+    background-color: maroon;
+    color: white;
+  
+    margin: 1em;
+    padding: 1em;
+  
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
-#modal {
-    border-radius: 10px;
-    background-color: maroon;
-    color: white;
-  
-    margin: 1em;
-    padding: 1em;
-  
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-}
-
-#modal2{
-    border-radius: 10px;
-    background-color: maroon;
-    color: white;
-  
-    margin: 1em;
-    padding: 1em;
-  
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-}
-
 .hidden{
       visibility: hidden;
 }

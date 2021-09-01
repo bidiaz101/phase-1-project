@@ -91,7 +91,7 @@ function renderCard(data){
     const flavorText = document.createElement("p")
 
     getFlavorText(data.species.url).then((json) =>{
-        arrIndex = Math.floor(Math.random()*5)
+        arrIndex = Math.floor(Math.random()*6)
         const englishEntries = json.flavor_text_entries.filter(entryObj => entryObj.language.name === "en")
         const respText = englishEntries[arrIndex].flavor_text
         flavorText.innerText = respText.replace("\f", " ")
@@ -171,7 +171,7 @@ function removeSprite(removeBtn){
 function showTeamError() {
     const error = document.getElementById("modal2")
     error.hidden = false
-    setTimeout(() => error.hidden = true , 3000)
+    setTimeout(() => error.hidden = true , 3500)
 }
 
 function getCard(name, number){
