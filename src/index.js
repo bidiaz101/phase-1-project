@@ -92,13 +92,15 @@ function renderCard(data){
 
     getFlavorText(data.species.url).then((json) =>{
         arrIndex = Math.floor(Math.random()*5)
-        const englishEntries = json.flavor_text_entries.filter(entryObj => {
-            return entryObj.language.name === "en"
-        })
+        const englishEntries = json.flavor_text_entries.filter(entryObj => entryObj.language.name === "en")
         const respText = englishEntries[arrIndex].flavor_text
         flavorText.innerText = respText.replace("\f", " ")
         newCard.appendChild(flavorText)
     })
+
+    const newText = document.createElement("button")
+    newText.innerText = "Get More Info"
+    newText.addEventListener("click", () => renderCard(data))
 
     const teamBtn = document.createElement("button")
     teamBtn.id = "team-btn"
@@ -107,6 +109,9 @@ function renderCard(data){
         addTeamMember(data)
     })
 
+    newCard.appendChild(newText)
+    newCard.appendChild(document.createElement("br"))
+    newCard.appendChild(document.createElement("br"))
     newCard.appendChild(teamBtn)
     cardContainer.appendChild(newCard)
 }
