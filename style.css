@@ -80,9 +80,21 @@
     margin-left: auto;
     margin-right: auto;
 }
+#pokemon-card p{
+    font-family: 'Courier New', Courier, monospace;
+    background-color: rgba(116, 223, 252, 0.8);
+    margin-left: auto;
+    margin-right: auto;
+    width:fit-content;
+    padding: 10px;
+    border: 2px;
+    border-style: solid;
+    border-color: #F6FF33;
+}
 #pokemon-card button{
     position: relative;
     right: 110px;
+    top: 200px;
 }
 body{
     background-image: url("https://images.unsplash.com/photo-1534582929036-cc7f1bb2043e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1868&q=80");

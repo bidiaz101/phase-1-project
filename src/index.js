@@ -88,18 +88,15 @@ function renderCard(data){
         newCard.appendChild(monType)
     }
 
-    const flavorText = document.createElement("h3")
+    const flavorText = document.createElement("p")
 
     const text = getFlavorText(data.species.url).then( (json) =>{
         arrIndex = Math.floor(Math.random()*11)
         const respText = json.flavor_text_entries[arrIndex].flavor_text
-        console.log(respText)
         flavorText.innerText = respText
+        //console.log(flavorText)
         newCard.appendChild(flavorText)
     })
-
-
-    console.log("inside renderCard function:", text)
 
     const teamBtn = document.createElement("button")
     teamBtn.id = "team-btn"
@@ -107,7 +104,7 @@ function renderCard(data){
     teamBtn.addEventListener("click", () => {
         addTeamMember(data)
     })
-    //console.log("line 104", data)
+
     newCard.appendChild(teamBtn)
     cardContainer.appendChild(newCard)
 }
@@ -115,12 +112,6 @@ function renderCard(data){
 
 function getFlavorText(textUrl){
     return fetch(`${textUrl}`).then(resp => resp.json())
-    // .then(json => {
-    //     arrIndex = Math.floor(Math.random()*11)
-    //     const flavorText = json.flavor_text_entries[arrIndex].flavor_text
-    //     console.log("inside flavorText function:",flavorText)
-    //     return flavorText
-    //})
 }
 
 function addTeamMember(pokeData){
@@ -176,34 +167,23 @@ function showTeamError() {
     setTimeout(() => error.hidden = true , 3000)
 }
 
-// function getCard(name, number){
-//     //"number" var is string
-//     let cardMade = false
-//     const dexNum = parseInt(number)
-//     if(typeof dexNum === "number" && dexNum <= 898) {
-//         fetch(`https://pokeapi.co/api/v2/pokemon/${dexNum}/`)
-//         .then(resp => resp.json())
-//         .then(json => renderCard(json))
-//     } else if (dexNum > 898 || dexNum <=0) {
-//         showSearchError()
-//     } else if (typeof name === "string") {
-//         //for(let k = 1; k<899; k++){
-//             //search by name
-//             fetch(`https://pokeapi.co/api/v2/pokemon/${k}/`)
-//             .then(resp => resp.json())
-//             .then(json=> {
-//                 if(name.toLowerCase()===json.name.toLowerCase()){
-//                     renderCard(json)
-//                     cardMade = true
-//                     //console.log("after renderCard function:", cardMade)
-//                 }
-//                 //console.log("ouside if inside for loop:", cardMade)
-//             })
-//         }
-//         if(!cardMade){
-//             showSearchError()
-//             cardMade
-//             //console.log("ouside for and if:", cardMade)
-//         }
-//     }
-// }
+function getCard(name, number){
+    const dexNum = parseInt(number)
+    if(typeof dexNum === "number" && dexNum <= 898) {
+        fetch(`https://pokeapi.co/api/v2/pokemon/${dexNum}/`)
+        .then(resp => resp.json())
+        .then(json => renderCard(json))
+        .catch(()=>{
+            showSearchError()
+        })
+    } else if (typeof name === "string") {
+        fetch(`https://pokeapi.co/api/v2/pokemon/${name.toLowerCase()}/`)
+        .then(resp => resp.json())
+        .then(json=> {
+            renderCard(json)
+        })
+        .catch(()=>{
+            showSearchError()
+        })
+    }
+}
