@@ -162,7 +162,7 @@ span{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 .hidden{
-      visibility: hidden;
+    visibility: hidden;
 }
 footer{
     color:#F6FF33;
@@ -171,7 +171,7 @@ footer{
     width:100%;
     text-align: right;
     position:relative;
-    top: 700px;
+    top: 690px;
 }
 #pokemon-card #grass{
     background-color: greenyellow;
