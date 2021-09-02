@@ -135,10 +135,12 @@ function addTeamMember(pokeData){
     const mem4 = document.getElementById("member4")
     const mem5 = document.getElementById("member5")
     const mem6 = document.getElementById("member6")
+
     function highlightMember(sprite){
         sprite.style.backgroundColor="rgba(3, 190, 252,0.5)"
         setTimeout(() => sprite.style.backgroundColor="", 1000)
     }
+    
     switch("") {
         case mem1.innerHTML:
             mem1.appendChild(memberSprite)
