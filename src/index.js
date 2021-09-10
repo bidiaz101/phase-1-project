@@ -16,8 +16,8 @@ document.addEventListener("DOMContentLoaded", () =>{
 
     forwardBtn.addEventListener("click", () => {
         let j = i
+        spriteContainer.innerHTML= ""
         for(i=i; i<j+48; i++){
-            spriteContainer.innerHTML= ""
             fetchSprites(i)
         }
         if(i!==49){
@@ -31,8 +31,8 @@ document.addEventListener("DOMContentLoaded", () =>{
     backBtn.addEventListener("click", () => {
         let j = i-96
         i=i-48
+        spriteContainer.innerHTML=""
         for(j=j; j<i; j++){
-            spriteContainer.innerHTML=""
             fetchSprites(j)
         }
         if(j===49){
@@ -61,6 +61,7 @@ document.addEventListener("DOMContentLoaded", () =>{
 
 function fetchSprites(id){
     if(id<=898){    
+        //find way to fetch once for all sprites
         fetch(`https://pokeapi.co/api/v2/pokemon/${id}/`)
         .then(resp => resp.json())
         .then(json => {
@@ -91,8 +92,8 @@ function renderCard(data){
     const flavorText = document.createElement("p")
 
     getFlavorText(data.species.url).then((json) =>{
-        arrIndex = Math.floor(Math.random()*6)
         const englishEntries = json.flavor_text_entries.filter(entryObj => entryObj.language.name === "en")
+        arrIndex = Math.floor(Math.random()*englishEntries.length)
         const respText = englishEntries[arrIndex].flavor_text
         flavorText.innerText = respText.replace("\f", " ")
         newCard.appendChild(flavorText)
