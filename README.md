@@ -5,4 +5,4 @@ Everyone has heard of Pokemon. The franchise has fans worldwide, whether it be f
 
 ### Browse Pokemon
 
-![Browse Buttons](https://i.imgur.com/ZgxLFwG.png)
+<img src='https://i.imgur.com/ZgxLFwG.png' alt='Browse Buttons' style='height: 50%; width: 50%;' />
