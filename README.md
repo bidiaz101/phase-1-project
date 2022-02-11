@@ -4,5 +4,6 @@ to render pokemon sprites, allows user to click sprites and have the Pokemon inf
 Everyone has heard of Pokemon. The franchise has fans worldwide, whether it be for the games, the anime, or just that they're cute! One thing I love in Pokemon, and in most games, is the lore. The time the creators take to make the story behind the gameplay brings the world to life so much more. I wanted a way to browse the fascinating stories behind the monsters while also incorporating a main feature from the games. That feature was team building. So I decided to build Pokemon Team Builder Plus!
 
 ### Browse Pokemon
-
-<img src='https://i.imgur.com/ZgxLFwG.png' alt='Browse Buttons' style='height: 50%; width: 50%;' />
+<figure style='display: flex; justify-content: center;'>
+    <img src='https://i.imgur.com/ZgxLFwG.png' alt='Browse Buttons' style='height: 50%; width: 50%;' />
+<figure>
