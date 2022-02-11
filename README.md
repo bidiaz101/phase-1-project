@@ -22,8 +22,10 @@ They then have the option of generating more Pokedex entries and learning more a
 
 Two different entries are shown below.
 
-<img src='https://i.imgur.com/lglGUeN.png' alt='Pokedex entry' />
-<img src='https://i.imgur.com/WCaB7fK.png' alt='Different Pokedex entry' />
+<figure style="float: left;">
+    <img src='https://i.imgur.com/lglGUeN.png' alt='Pokedex entry' />
+    <img src='https://i.imgur.com/WCaB7fK.png' alt='Different Pokedex entry' />
+</figure>
 
 ### Team Building 
 
