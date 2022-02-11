@@ -180,6 +180,7 @@ function addTeamMember(pokeData){
 
 function removeSprite(removeBtn){
     removeBtn.parentNode.innerHTML=""
+    //https://via.placeholder.com/96x96 consider using this as placeholder to help with styling
 }
 
 function showTeamError() {
