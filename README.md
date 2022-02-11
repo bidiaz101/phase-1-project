@@ -5,9 +5,8 @@ Everyone has heard of Pokemon. The franchise has fans worldwide, whether it be f
 ### Browse Pokemon
 
 Team Builder 
-
-<img src='https://i.imgur.com/ZgxLFwG.png' alt='Browse Buttons' style='height: 25%; width: 25%;' />
-<img src='https://i.imgur.com/c0GbyI3.png' alt='Search Fields' style='height: 25%; width: 25%' />
+<img src='https://i.imgur.com/ZgxLFwG.png' alt='Browse Buttons' style='height: 50%; width: 50%; float: left;' />
+<img src='https://i.imgur.com/c0GbyI3.png' alt='Search Fields' style='height: 50%; width: 50%; float: left;' />
 
 Users can browse Pokemon using the buttons and the search field. They can either search by name, or by pokedex number. Once they select a Pokemon, that Pokemon will appear in the center as shown in the next section below.
 
@@ -15,14 +14,14 @@ Users can browse Pokemon using the buttons and the search field. They can either
 
 This is how the Pokemon will appear once the user chooses one. It shows the name, an image of the pokemon, and the type/types.
 
-<img src='https://i.imgur.com/QlVPvUf.png0' alt='Pokemon display example' style='height: 25%; width: 25%' />
+<img src='https://i.imgur.com/QlVPvUf.png0' alt='Pokemon display example' style='height: 50%; width: 50%' />
 
 They then have the option of generating more Pokedex entries and learning more about the pokemon and it's abilities by pressing the "Get More Info" button.
 
 Two different entries are shown below.
 
-<img src='https://i.imgur.com/lglGUeN.png' alt='Pokedex entry' style='height: 25%; width: 25%' />
-<img src='https://i.imgur.com/WCaB7fK.png' alt='Different Pokedex entry' style='height: 25%; width: 25%' />
+<img src='https://i.imgur.com/lglGUeN.png' alt='Pokedex entry' style='height: 50%; width: 50%' />
+<img src='https://i.imgur.com/WCaB7fK.png' alt='Different Pokedex entry' style='height: 50%; width: 50%' />
 
 ### Team Building 
 
