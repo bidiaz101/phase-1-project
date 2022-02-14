@@ -4,8 +4,8 @@ Everyone has heard of Pokemon. The franchise has fans worldwide, whether it be f
 
 ### Browse Pokemon
 
-<img src='https://i.imgur.com/ZgxLFwG.png' alt='Browse Buttons' style='height: 40%; width: 40%; float: center;' />
-<img src='https://i.imgur.com/c0GbyI3.png' alt='Search Fields' style='height: 40%; width: 40%; float: center;' />
+<img src='https://i.imgur.com/ZgxLFwG.png' alt='Browse Buttons' style='height: 40%; width: 40%; float: left;' />
+<img src='https://i.imgur.com/c0GbyI3.png' alt='Search Fields' style='height: 40%; width: 40%; float: right;' />
 
 Users can browse Pokemon using the buttons and the search field. They can either search by name, or by pokedex number. Once they select a Pokemon, that Pokemon will appear in the center as shown in the next section below.
 

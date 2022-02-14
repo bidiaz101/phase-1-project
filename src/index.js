@@ -2,7 +2,7 @@ let i
 let j
 let showSearchError
 document.addEventListener("DOMContentLoaded", () =>{
-    for(i=1; i< 49; i++){
+    for(let i=1; i< 49; i++){
         fetchSprites(i)
     }
 
